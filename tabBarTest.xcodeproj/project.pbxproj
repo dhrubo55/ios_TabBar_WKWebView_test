@@ -15,6 +15,10 @@
 		7B0BC1A7216866610040C2F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0BC1A6216866610040C2F6 /* main.m */; };
 		7B0BC1B1216866610040C2F6 /* tabBarTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0BC1B0216866610040C2F6 /* tabBarTestTests.m */; };
 		7B0BC1BC216866610040C2F6 /* tabBarTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0BC1BB216866610040C2F6 /* tabBarTestUITests.m */; };
+		7B0BC1CE216874FA0040C2F6 /* WkWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0BC1CD216874FA0040C2F6 /* WkWebViewController.m */; };
+		7B0BC1D121687A7A0040C2F6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0BC1D021687A7A0040C2F6 /* WebKit.framework */; };
+		7B0BC1DE216888090040C2F6 /* digi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B0BC1DC216888090040C2F6 /* digi.jpg */; };
+		7B0BC1DF216888090040C2F6 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 7B0BC1DD216888090040C2F6 /* about.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		7B0BC1B7216866610040C2F6 /* tabBarTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabBarTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0BC1BB216866610040C2F6 /* tabBarTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabBarTestUITests.m; sourceTree = "<group>"; };
 		7B0BC1BD216866610040C2F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B0BC1CC216874FA0040C2F6 /* WkWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WkWebViewController.h; sourceTree = "<group>"; };
+		7B0BC1CD216874FA0040C2F6 /* WkWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WkWebViewController.m; sourceTree = "<group>"; };
+		7B0BC1D021687A7A0040C2F6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7B0BC1DC216888090040C2F6 /* digi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = digi.jpg; sourceTree = "<group>"; };
+		7B0BC1DD216888090040C2F6 /* about.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0BC1D121687A7A0040C2F6 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +91,13 @@
 		7B0BC18B216866580040C2F6 = {
 			isa = PBXGroup;
 			children = (
+				7B0BC1DD216888090040C2F6 /* about.html */,
+				7B0BC1DC216888090040C2F6 /* digi.jpg */,
 				7B0BC196216866590040C2F6 /* tabBarTest */,
 				7B0BC1AF216866610040C2F6 /* tabBarTestTests */,
 				7B0BC1BA216866610040C2F6 /* tabBarTestUITests */,
 				7B0BC195216866590040C2F6 /* Products */,
+				7B0BC1CF21687A7A0040C2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +123,8 @@
 				7B0BC1A2216866610040C2F6 /* LaunchScreen.storyboard */,
 				7B0BC1A5216866610040C2F6 /* Info.plist */,
 				7B0BC1A6216866610040C2F6 /* main.m */,
+				7B0BC1CC216874FA0040C2F6 /* WkWebViewController.h */,
+				7B0BC1CD216874FA0040C2F6 /* WkWebViewController.m */,
 			);
 			path = tabBarTest;
 			sourceTree = "<group>";
@@ -130,6 +145,14 @@
 				7B0BC1BD216866610040C2F6 /* Info.plist */,
 			);
 			path = tabBarTestUITests;
+			sourceTree = "<group>";
+		};
+		7B0BC1CF21687A7A0040C2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B0BC1D021687A7A0040C2F6 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0BC1DE216888090040C2F6 /* digi.jpg in Resources */,
+				7B0BC1DF216888090040C2F6 /* about.html in Resources */,
 				7B0BC1A4216866610040C2F6 /* LaunchScreen.storyboard in Resources */,
 				7B0BC1A1216866610040C2F6 /* Assets.xcassets in Resources */,
 				7B0BC19F216866590040C2F6 /* Main.storyboard in Resources */,
@@ -265,6 +290,7 @@
 				7B0BC19C216866590040C2F6 /* ViewController.m in Sources */,
 				7B0BC1A7216866610040C2F6 /* main.m in Sources */,
 				7B0BC199216866590040C2F6 /* AppDelegate.m in Sources */,
+				7B0BC1CE216874FA0040C2F6 /* WkWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
